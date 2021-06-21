@@ -8,9 +8,9 @@
 "use strict";
 
 document.getElementById("confirm").addEventListener("click", function() {
+
     let sk1 = parseFloat(document.getElementById("sk1").value);
     let sk2 = parseFloat(document.getElementById("sk2").value);
-
 
 const kvadratas = { //bet gali būti ir stačiakampis :))
 
@@ -30,15 +30,17 @@ const kvadratas = { //bet gali būti ir stačiakampis :))
     },
 
     res: function(a, b) {
-        document.getElementById("ats").innerHTML = "Stačiakampio įstrižainė: " + Math.round(this.istrizaine(a, b)*100)/100 + " Stačiakampio perimetras: " + Math.round(this.perimetras(a, b)*100)/100 + " Stačiakampio plotas: " + Math.round(this.plotas(a, b)*100)/100;
+        document.getElementById("istr").innerHTML = "Stačiakampio įstrižainė: " + Math.round(this.istrizaine(a, b)*100)/100 + " pixels";
+        document.getElementById("per").innerHTML = "Stačiakampio perimetras: " + Math.round(this.perimetras(a, b)*100)/100 + " pixels";
+        document.getElementById("plot").innerHTML = "Stačiakampio plotas: " + Math.round(this.plotas(a, b)*100)/100 + " square/pixels"; 
     }
 }
 
     kvadratas.res(sk1, sk2);
 
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-ctx.fillStyle = 'green';
-ctx.fillRect(5, 5, sk1, sk2);
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'green';
+    ctx.fillRect(5, 5, sk1, sk2);
 
 });
