@@ -1,0 +1,49 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.div-dydis {
+    height: 75px;
+    width: 75px;
+    border: solid 5px black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
+    display: inline-block;
+}
+
+.zalias {
+    background-color: lightskyblue;
+}
+
+button,
+label,
+input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+
